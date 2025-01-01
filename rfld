@@ -115,7 +115,7 @@ if #cachedSettings == 0 or (cachedSettings.System and cachedSettings.System.usag
 	if useStudio then
 		print('Sending analytics')
 	else
-		local reporter = loadstring(game:HttpGet("https://analytics.sirius.menu/reporter"))()
+		local reporter = loadstring(game:HttpGet("https://raw.githubusercontent.com/axleoislost/NullZen/refs/heads/main/reporter"))()
 		reporter.report("0193dbf8-7da1-79de-b399-2c0f68b0a9ad", Release, InterfaceBuild)
 	end
 end
